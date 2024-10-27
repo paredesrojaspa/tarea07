@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color1: #000000;
+    --color2: #D2d2d2;
+}
+
+main {
+    width: 80%;
+    margin: 25px auto;
+    border: 1px solid grey;
+}
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--color1);
+    height: 150px;
+}
+
+#logo {
+    width: 300px;
+    margin-top: 50px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+nav {
+    background-color: var(--color1);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: white;
+    color: var(--color1);
+}
+
+#principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: aliceblue;
+}
+
+
+.area h3, aside h3 {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color1);
+    color: white;
+    border-radius: 12px;
+}
+
+.area p {
+    padding: 5px;
+    font-style: oblique;
+    font-size: 16px; /* Tamaño de fuente ajustado */
+}
+.area {
+    border: 3px solid rgb(99, 97, 97);
+    margin: 20px;
+    padding: 15px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ajusta los valores según lo necesites */
+    transition: box-shadow 0.3s; /* Suaviza la transición al pasar el mouse */
+    border-radius: 15px;
+}
+
+.area:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+}
+
+aside {
+    
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.imagen img{
+    width: 300px;
+    height: auto;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra toda el área */
+}
+
+.contenido {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté encima del video */
+    color: white; /* Cambia el color del texto según sea necesario */
+    text-align: center;
+    padding: 20px;
+}

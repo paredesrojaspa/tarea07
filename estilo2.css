@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color1: #1e1e1e; /* Color de fondo oscuro */
+    --color2: #f2f2f2; /* Color de texto claro */
+    --highlight: #000000; /* Color para destacar elementos */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    background-color: var(--color2); /* Fondo claro */
+    color: var(--color1); /* Texto oscuro */
+}
+
+main {
+    width: 80%;
+    margin: 25px auto;
+    border-radius: 10px;
+    overflow: hidden; /* Esquinas redondeadas */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    background-color: white; /* Fondo blanco */
+}
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--highlight); /* Color de cabecera */
+    color: white;
+    height: 150px; /* Texto blanco */
+}
+
+#logo {
+    width: 300px;
+    margin-top: 50px;
+}
+
+
+#logo img {
+    width: 100%;
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+nav {
+    background-color: var(--highlight); /* Color del menú */
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: rgb(255, 255, 255); /* Fondo al pasar el mouse */
+    color: #000000;
+}
+
+#principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.area {
+    border: 2px solid rgb(99, 97, 97);
+    margin: 20px;
+    padding: 15px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    background-color: #f9f9f9; /* Fondo de área */
+}
+
+.area:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+.area h3 {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--highlight);
+    color: white;
+    border-radius: 10px;
+}
+
+.area p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+aside {
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+footer {
+    background-color: var(--highlight);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#copy {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #D2d2d2;
+}
